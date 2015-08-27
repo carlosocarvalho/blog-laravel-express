@@ -1,0 +1,20 @@
+body{
+    padding-top: 70px;
+}
+
+.form-admin{
+    background: #f0f0f0;
+    border: 1px #ddd solid;
+   padding: 15px;
+}
+.form-admin h2{
+    margin: 0px;
+    margin-bottom: 15px;
+}
+
+input,textarea,
+select{
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important;;
+}

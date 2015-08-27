@@ -28,3 +28,12 @@ $factory->define(App\Models\Post::class, function (Faker\Generator $faker) {
         'body' => $faker->paragraph(4)
     ];
 });
+
+
+
+
+$factory->define(App\Models\Tag::class, function (Faker\Generator $faker) {
+    return [
+        'name' => $faker->word
+    ];
+});
