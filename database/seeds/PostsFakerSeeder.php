@@ -12,7 +12,7 @@ class PostsFakerSeeder extends Seeder
     public function run()
     {
 
-            Post::truncate();
+            //Post::truncate();
             factory('App\Models\Post',15)->create();
 
     }

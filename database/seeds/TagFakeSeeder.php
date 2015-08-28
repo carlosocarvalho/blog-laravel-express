@@ -11,7 +11,7 @@ class TagFakeSeeder extends Seeder
      */
     public function run()
     {
-        App\Models\Tag::truncate();
+       //App\Models\Tag::truncate();
         factory( App\Models\Tag::class ,15)->create();
     }
 }
