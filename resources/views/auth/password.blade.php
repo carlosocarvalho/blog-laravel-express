@@ -1,4 +1,4 @@
-@extends('app')
+@extends('tpl')
 
 @section('content')
 <div class="container-fluid">

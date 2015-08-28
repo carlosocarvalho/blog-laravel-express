@@ -14,6 +14,13 @@ class DatabaseSeeder extends Seeder
     {
         Model::unguard();
 
+        factory(App\User::class)->create([
+            'name' => 'administrator',
+            'email' => 'quenduk@yahoo.com.br',
+            'password' => bcrypt('123456'),
+            'remember_token' => str_random(10),
+        ]);
+
          $this->call(PostsFakerSeeder::class);
          $this->call(TagFakeSeeder::class);
 

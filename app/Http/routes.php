@@ -13,8 +13,12 @@
 
 Route::get('/', 'PostsController@index');
 
+Route::controllers([
+    'auth'=>'\App\Http\Controllers\Auth\AuthController',
+    'password'=>'\App\Http\Controllers\Auth\PasswordController'
+]);
 
-Route::group(['prefix'=>'administrator'],function(){
+Route::group(['prefix'=>'administrator','middleware'=>'auth'],function(){
      Route::group(['prefix'=>'posts'],function(){
 
          Route::get('/',['as'=>'admin.posts.index' ,'uses'=>'PostsAdminController@index']);
